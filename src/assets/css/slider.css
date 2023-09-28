@@ -1,0 +1,10 @@
+.slider-bullet{
+    padding: 3px;
+    border: #b7d6c0 solid 1px;
+    border-radius: 250px;
+    width: 40px;
+    margin: 3px;
+}
+.bullet-active{
+    background-color: #698e74;
+}

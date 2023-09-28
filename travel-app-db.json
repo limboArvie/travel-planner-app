@@ -1,0 +1,970 @@
+{
+  "travels": [
+    {
+      "id": 1,
+      "imageUrl": "https://picsum.photos/650/450",
+      "name": "21 Red Balloons",
+      "place": "Cappadocia, Turkey",
+      "description": "Lorem ipsum",
+      "departureDate": "2022-01-04T00:00:00.000Z",
+      "departureTime": "09:00",
+      "returnDate": "2022-01-10T00:00:00.000Z",
+      "returnTime": "18:00",
+      "status": "Pending",
+      "organizer": {
+        "id": 1,
+        "username": "testuser1",
+        "password": "abc123",
+        "fullName": "Veronika Macias",
+        "email": "testuser1@travelapp.com",
+        "mobileNumber": "10203040500",
+        "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+      },
+      "requiredTravelersCount": 3,
+      "joinedTravelers": [
+        {
+          "id": 1,
+          "username": "testuser1",
+          "password": "abc123",
+          "fullName": "Veronika Macias",
+          "email": "testuser1@travelapp.com",
+          "mobileNumber": "10203040500",
+          "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+        },
+        {
+          "id": 4,
+          "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4",
+          "fullName": "Arvie Limbo",
+          "email": "arvie@gmail.com",
+          "username": "arvielimbo",
+          "mobileNumber": "09999999999",
+          "password": "abcd1234"
+        }
+      ],
+      "itinerary": [
+        {
+          "activityDate": "2022-01-04T00:00:00.000Z",
+          "activities": [
+            {
+              "activityTitle": "Hot Air Balloons Watching",
+              "activityDescription": "Lorem ipsum dolor sit amet",
+              "activityTime": "10:00"
+            },
+            {
+              "activityTitle": "Turkish Lunch",
+              "activityDescription": "Lorem ipsum dolor sit amet",
+              "activityTime": "13:00"
+            }
+          ]
+        },
+        {
+          "activityDate": "2022-01-05T00:00:00.000Z",
+          "activities": [
+            {
+              "activityTitle": "National Meseum",
+              "activityDescription": "Lorem ipsum dolor sit amet",
+              "activityTime": "10:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://picsum.photos/650/450",
+      "name": "Golden Triangle",
+      "place": "Thailand",
+      "description": "Lorem ipsum",
+      "departureDate": "2022-02-05T00:00:00.000Z",
+      "departureTime": "09:00",
+      "returnDate": "2022-02-15T00:00:00.000Z",
+      "returnTime": "20:30",
+      "status": "Cancelled",
+      "organizer": {
+        "id": 1,
+        "username": "testuser1",
+        "password": "abc123",
+        "fullName": "Veronika Macias",
+        "email": "testuser1@travelapp.com",
+        "mobileNumber": "10203040500",
+        "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+      },
+      "requiredTravelersCount": 3,
+      "joinedTravelers": [
+        {
+          "id": 1,
+          "username": "testuser1",
+          "password": "abc123",
+          "fullName": "Veronika Macias",
+          "email": "testuser1@travelapp.com",
+          "mobileNumber": "10203040500",
+          "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+        },
+        {
+          "id": 2,
+          "username": "testuser2",
+          "password": "abc123",
+          "fullName": "Ueli Ayers",
+          "email": "testuser2@travelapp.com",
+          "mobileNumber": "54603040278",
+          "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+        },
+        {
+          "id": 3,
+          "username": "testuser3",
+          "password": "abc123",
+          "fullName": "Kristen Abdulrashid",
+          "email": "testuser3@travelapp.com",
+          "mobileNumber": "98603330512",
+          "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+        }
+      ],
+      "itinerary": [
+        {
+          "activityDate": "2022-02-05T00:00:00.000Z",
+          "activities": [
+            {
+              "activityTitle": "Arrival at Bangkok",
+              "activityDescription": "Lorem ipsum dolor sit amet",
+              "activityTime": "09:00"
+            },
+            {
+              "activityTitle": "Departure to Golden Triangle",
+              "activityDescription": "Lorem ipsum dolor sit amet",
+              "activityTime": "10:30"
+            },
+            {
+              "activityTitle": "Checkin at Hotel",
+              "activityDescription": "Lorem ipsum dolor sit amet",
+              "activityTime": "14:00"
+            }
+          ]
+        },
+        {
+          "activityDate": "2022-02-05T00:00:00.000Z",
+          "activities": [
+            {
+              "activityTitle": "Breakfast",
+              "activityDescription": "Lorem ipsum dolor sit amet",
+              "activityTime": "07:00"
+            },
+            {
+              "activityTitle": "Prepare",
+              "activityDescription": "Lorem ipsum dolor sit amet",
+              "activityTime": "08:00"
+            },
+            {
+              "activityTitle": "Golden Triangle Tour",
+              "activityDescription": "Lorem ipsum dolor sit amet",
+              "activityTime": "10:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://picsum.photos/650/450",
+      "name": "Way of the Bushido",
+      "place": "Kyoto, Japan",
+      "description": "Lorem ipsum",
+      "departureDate": "2022-01-15T00:00:00.000Z",
+      "departureTime": "09:00",
+      "returnDate": "2022-01-25T00:00:00.000Z",
+      "returnTime": "17:00",
+      "status": "Waiting",
+      "organizer": {
+        "id": 1,
+        "username": "testuser1",
+        "password": "abc123",
+        "fullName": "Veronika Macias",
+        "email": "testuser1@travelapp.com",
+        "mobileNumber": "10203040500",
+        "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+      },
+      "requiredTravelersCount": 2,
+      "joinedTravelers": [
+        {
+          "id": 1,
+          "username": "testuser1",
+          "password": "abc123",
+          "fullName": "Veronika Macias",
+          "email": "testuser1@travelapp.com",
+          "mobileNumber": "10203040500",
+          "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+        },
+        {
+          "id": 2,
+          "username": "testuser2",
+          "password": "abc123",
+          "fullName": "Ueli Ayers",
+          "email": "testuser2@travelapp.com",
+          "mobileNumber": "54603040278",
+          "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+        }
+      ],
+      "itinerary": [
+        {
+          "activityDate": "2022-01-15T00:00:00.000Z",
+          "activities": [
+            {
+              "activityTitle": "Hot Air Balloons Watching",
+              "activityDescription": "Lorem ipsum dolor sit amet",
+              "activityTime": "10:00"
+            },
+            {
+              "activityTitle": "Turkish Lunch",
+              "activityDescription": "Lorem ipsum dolor sit amet",
+              "activityTime": "13:00"
+            }
+          ]
+        },
+        {
+          "activityDate": "2022-01-16T00:00:00.000Z",
+          "activities": [
+            {
+              "activityTitle": "National Meseum",
+              "activityDescription": "Lorem ipsum dolor sit amet",
+              "activityTime": "10:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://picsum.photos/650/450",
+      "name": "3 Kingdoms",
+      "place": "Beijing, China",
+      "description": "Lorem ipsum",
+      "departureDate": "2020-11-16T16:00:00.000Z",
+      "returnDate": "2020-11-25T16:00:00.000Z",
+      "departureTime": "09:00",
+      "returnTime": "18:45",
+      "organizer": {
+        "id": 1,
+        "username": "testuser1",
+        "password": "abc123",
+        "fullName": "Veronika Macias",
+        "email": "testuser1@travelapp.com",
+        "mobileNumber": "10203040500",
+        "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+      },
+      "status": "Ongoing",
+      "requiredTravelersCount": 10,
+      "joinedTravelers": [
+        {
+          "id": 1,
+          "username": "testuser1",
+          "password": "abc123",
+          "fullName": "Veronika Macias",
+          "email": "testuser1@travelapp.com",
+          "mobileNumber": "10203040500",
+          "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+        }
+      ],
+      "itinerary": [
+        {
+          "activityDate": "2020-11-16T16:00:00.000Z",
+          "activities": [
+            {
+              "activityTime": "10:00",
+              "activityTitle": "Hot Air Balloons Watching",
+              "activityDescription": "Lorem ipsum dolor sit amet"
+            },
+            {
+              "activityTime": "13:00",
+              "activityTitle": "Turkish Lunch",
+              "activityDescription": "Lorem ipsum dolor sit amet"
+            }
+          ]
+        },
+        {
+          "activityDate": "2020-11-17T16:00:00.000Z",
+          "activities": [
+            {
+              "activityTime": "10:00",
+              "activityTitle": "National Meseum",
+              "activityDescription": "Lorem ipsum dolor sit amet"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "imageUrl": "https://picsum.photos/650/450",
+      "name": "Iron Curtain",
+      "place": "Pyongyan, North Korea",
+      "description": "Lorem ipsum",
+      "departureDate": "2022-05-09T00:00:00.000Z",
+      "departureTime": "08:30",
+      "returnDate": "2022-05-25T00:00:00.000Z",
+      "returnTime": "19:30",
+      "status": "Cancelled",
+      "organizer": {
+        "id": 1,
+        "username": "testuser1",
+        "password": "abc123",
+        "fullName": "Veronika Macias",
+        "email": "testuser1@travelapp.com",
+        "mobileNumber": "10203040500",
+        "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+      },
+      "requiredTravelersCount": 3,
+      "joinedTravelers": [
+        {
+          "id": 1,
+          "username": "testuser1",
+          "password": "abc123",
+          "fullName": "Veronika Macias",
+          "email": "testuser1@travelapp.com",
+          "mobileNumber": "10203040500",
+          "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+        }
+      ],
+      "itinerary": [
+        {
+          "activityDate": "2022-05-09T00:00:00.000Z",
+          "activities": [
+            {
+              "activityTitle": "Hot Air Balloons Watching",
+              "activityDescription": "Lorem ipsum dolor sit amet",
+              "activityTime": "10:00"
+            },
+            {
+              "activityTitle": "Turkish Lunch",
+              "activityDescription": "Lorem ipsum dolor sit amet",
+              "activityTime": "13:00"
+            }
+          ]
+        },
+        {
+          "activityDate": "2022-05-10T00:00:00.000Z",
+          "activities": [
+            {
+              "activityTitle": "National Meseum",
+              "activityDescription": "Lorem ipsum dolor sit amet",
+              "activityTime": "10:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "imageUrl": "https://picsum.photos/650/450",
+      "name": "Oppa 1",
+      "place": "Seoul, South Korea",
+      "description": "Lorem ipsum",
+      "departureDate": "2022-09-09T00:00:00.000Z",
+      "departureTime": "06:30",
+      "returnDate": "2022-09-25T00:00:00.000Z",
+      "returnTime": "18:30",
+      "status": "Draft",
+      "organizer": {
+        "id": 1,
+        "username": "testuser1",
+        "password": "abc123",
+        "fullName": "Veronika Macias",
+        "email": "testuser1@travelapp.com",
+        "mobileNumber": "10203040500",
+        "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+      },
+      "requiredTravelersCount": 2,
+      "joinedTravelers": [
+        {
+          "id": 1,
+          "username": "testuser1",
+          "password": "abc123",
+          "fullName": "Veronika Macias",
+          "email": "testuser1@travelapp.com",
+          "mobileNumber": "10203040500",
+          "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+        }
+      ],
+      "itinerary": [
+        {
+          "activityDate": "2022-09-09T00:00:00.000Z",
+          "activities": [
+            {
+              "activityTitle": "Hot Air Balloons Watching",
+              "activityDescription": "Lorem ipsum dolor sit amet",
+              "activityTime": "10:00"
+            },
+            {
+              "activityTitle": "Turkish Lunch",
+              "activityDescription": "Lorem ipsum dolor sit amet",
+              "activityTime": "13:00"
+            }
+          ]
+        },
+        {
+          "activityDate": "2022-09-10T00:00:00.000Z",
+          "activities": [
+            {
+              "activityTitle": "National Meseum",
+              "activityDescription": "Lorem ipsum dolor sit amet",
+              "activityTime": "10:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "imageUrl": "https://picsum.photos/650/450",
+      "name": "Stars and Stripes",
+      "place": "United States",
+      "description": "Lorem ipsum",
+      "departureDate": "2022-05-09T00:00:00.000Z",
+      "departureTime": "09:00",
+      "returnDate": "2022-09-25T00:00:00.000Z",
+      "returnTime": "17:00",
+      "status": "Draft",
+      "organizer": {
+        "id": 1,
+        "username": "testuser1",
+        "password": "abc123",
+        "fullName": "Veronika Macias",
+        "email": "testuser1@travelapp.com",
+        "mobileNumber": "10203040500",
+        "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+      },
+      "requiredTravelersCount": 2,
+      "joinedTravelers": [
+        {
+          "id": 1,
+          "username": "testuser1",
+          "password": "abc123",
+          "fullName": "Veronika Macias",
+          "email": "testuser1@travelapp.com",
+          "mobileNumber": "10203040500",
+          "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+        }
+      ],
+      "itinerary": [
+        {
+          "activityDate": "2022-05-09T00:00:00.000Z",
+          "activities": [
+            {
+              "activityTitle": "Hot Air Balloons Watching",
+              "activityDescription": "Lorem ipsum dolor sit amet",
+              "activityTime": "10:00"
+            },
+            {
+              "activityTitle": "Turkish Lunch",
+              "activityDescription": "Lorem ipsum dolor sit amet",
+              "activityTime": "13:00"
+            }
+          ]
+        },
+        {
+          "activityDate": "2022-05-10T00:00:00.000Z",
+          "activities": [
+            {
+              "activityTitle": "National Meseum",
+              "activityDescription": "Lorem ipsum dolor sit amet",
+              "activityTime": "10:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "imageUrl": "https://picsum.photos/650/450",
+      "name": "Teas and Biscuits",
+      "place": "London, UK",
+      "description": "Lorem ipsum",
+      "departureDate": "2022-03-09T00:00:00.000Z",
+      "departureTime": "09:00",
+      "returnDate": "2022-03-25T00:00:00.000Z",
+      "returnTime": "18:00",
+      "status": "Waiting",
+      "organizer": {
+        "id": 1,
+        "username": "testuser1",
+        "password": "abc123",
+        "fullName": "Veronika Macias",
+        "email": "testuser1@travelapp.com",
+        "mobileNumber": "10203040500",
+        "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+      },
+      "requiredTravelersCount": 2,
+      "joinedTravelers": [
+        {
+          "id": 1,
+          "username": "testuser1",
+          "password": "abc123",
+          "fullName": "Veronika Macias",
+          "email": "testuser1@travelapp.com",
+          "mobileNumber": "10203040500",
+          "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+        },
+        {
+          "id": 2,
+          "username": "testuser2",
+          "password": "abc123",
+          "fullName": "Ueli Ayers",
+          "email": "testuser2@travelapp.com",
+          "mobileNumber": "54603040278",
+          "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+        }
+      ],
+      "itinerary": [
+        {
+          "activityDate": "2022-03-09T00:00:00.000Z",
+          "activities": [
+            {
+              "activityTitle": "Hot Air Balloons Watching",
+              "activityDescription": "Lorem ipsum dolor sit amet",
+              "activityTime": "10:00"
+            },
+            {
+              "activityTitle": "Turkish Lunch",
+              "activityDescription": "Lorem ipsum dolor sit amet",
+              "activityTime": "13:00"
+            }
+          ]
+        },
+        {
+          "activityDate": "2022-03-10T00:00:00.000Z",
+          "activities": [
+            {
+              "activityTitle": "National Meseum",
+              "activityDescription": "Lorem ipsum dolor sit amet",
+              "activityTime": "10:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "imageUrl": "https://picsum.photos/650/450",
+      "name": "Greetings, Comrade",
+      "place": "Russia",
+      "description": "Lorem ipsum",
+      "departureDate": "2022-10-09T00:00:00.000Z",
+      "departureTime": "09:00",
+      "returnDate": "2022-10-25T00:00:00.000Z",
+      "returnTime": "20:00",
+      "status": "Completed",
+      "organizer": {
+        "id": 1,
+        "username": "testuser1",
+        "password": "abc123",
+        "fullName": "Veronika Macias",
+        "email": "testuser1@travelapp.com",
+        "mobileNumber": "10203040500",
+        "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+      },
+      "requiredTravelersCount": 5,
+      "joinedTravelers": [
+        {
+          "id": 1,
+          "username": "testuser1",
+          "password": "abc123",
+          "fullName": "Veronika Macias",
+          "email": "testuser1@travelapp.com",
+          "mobileNumber": "10203040500",
+          "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+        }
+      ],
+      "itinerary": [
+        {
+          "activityDate": "2022-10-09T00:00:00.000Z",
+          "activities": [
+            {
+              "activityTitle": "Hot Air Balloons Watching",
+              "activityDescription": "Lorem ipsum dolor sit amet",
+              "activityTime": "10:00"
+            },
+            {
+              "activityTitle": "Turkish Lunch",
+              "activityDescription": "Lorem ipsum dolor sit amet",
+              "activityTime": "13:00"
+            }
+          ]
+        },
+        {
+          "activityDate": "2022-10-10T00:00:00.000Z",
+          "activities": [
+            {
+              "activityTitle": "National Meseum",
+              "activityDescription": "Lorem ipsum dolor sit amet",
+              "activityTime": "10:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "imageUrl": "https://picsum.photos/650/450",
+      "name": "Immunity Challenge",
+      "place": "Wuhan, China",
+      "description": "Lorem ipsum",
+      "departureDate": "2022-01-15T00:00:00.000Z",
+      "departureTime": "06:00",
+      "returnDate": "2022-01-25T00:00:00.000Z",
+      "returnTime": "18:00",
+      "status": "Completed",
+      "organizer": {
+        "id": 1,
+        "username": "testuser1",
+        "password": "abc123",
+        "fullName": "Veronika Macias",
+        "email": "testuser1@travelapp.com",
+        "mobileNumber": "10203040500",
+        "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+      },
+      "requiredTravelersCount": 10,
+      "joinedTravelers": [
+        {
+          "id": 1,
+          "username": "testuser1",
+          "password": "abc123",
+          "fullName": "Veronika Macias",
+          "email": "testuser1@travelapp.com",
+          "mobileNumber": "10203040500",
+          "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+        }
+      ],
+      "itinerary": [
+        {
+          "activityDate": "2022-01-15T00:00:00.000Z",
+          "activities": [
+            {
+              "activityTitle": "Hot Air Balloons Watching",
+              "activityDescription": "Lorem ipsum dolor sit amet",
+              "activityTime": "10:00"
+            },
+            {
+              "activityTitle": "Turkish Lunch",
+              "activityDescription": "Lorem ipsum dolor sit amet",
+              "activityTime": "13:00"
+            }
+          ]
+        },
+        {
+          "activityDate": "2022-01-16T00:00:00.000Z",
+          "activities": [
+            {
+              "activityTitle": "National Meseum",
+              "activityDescription": "Lorem ipsum dolor sit amet",
+              "activityTime": "10:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "imageUrl": "https://picsum.photos/650/450",
+      "name": "Sample",
+      "place": "Sample",
+      "description": "Sample",
+      "departureDate": "2022-02-15T00:00:00.000Z",
+      "departureTime": "10:00",
+      "returnDate": "2022-02-19T00:00:00.000Z",
+      "returnTime": "12:00",
+      "status": "Pending",
+      "organizer": {
+        "id": 1,
+        "username": "testuser1",
+        "password": "abc123",
+        "fullName": "Veronika Macias",
+        "email": "testuser1@travelapp.com",
+        "mobileNumber": "10203040500",
+        "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+      },
+      "requiredTravelersCount": 10,
+      "joinedTravelers": [
+        {
+          "id": 1,
+          "username": "testuser1",
+          "password": "abc123",
+          "fullName": "Veronika Macias",
+          "email": "testuser1@travelapp.com",
+          "mobileNumber": "10203040500",
+          "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+        },
+        {
+          "id": 4,
+          "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4",
+          "fullName": "Arvie Limbo",
+          "email": "arvie@gmail.com",
+          "username": "arvielimbo",
+          "mobileNumber": "09999999999",
+          "password": "abcd1234"
+        }
+      ],
+      "itinerary": [
+        {
+          "activityDate": "2022-02-15T00:00:00.000Z",
+          "activities": [
+            {
+              "activityTitle": "Act 1",
+              "activityDescription": "Act 1",
+              "activityTime": "12:00"
+            }
+          ]
+        },
+        {
+          "activityDate": "2022-02-16T00:00:00.000Z",
+          "activities": [
+            {
+              "activityTitle": "Act 2",
+              "activityDescription": "Act 2",
+              "activityTime": "12:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "imageUrl": "https://picsum.photos/650/450",
+      "name": "Another 2",
+      "place": "Another 1",
+      "description": "Another 1",
+      "departureDate": "2022-02-15T00:00:00.000Z",
+      "departureTime": "13:00",
+      "returnDate": "2022-02-19T00:00:00.000Z",
+      "returnTime": "12:00",
+      "status": "Waiting",
+      "organizer": {
+        "id": 2,
+        "username": "testuser2",
+        "password": "abc123",
+        "fullName": "Ueli Ayers",
+        "email": "testuser2@travelapp.com",
+        "mobileNumber": "54603040278",
+        "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+      },
+      "requiredTravelersCount": 3,
+      "joinedTravelers": [
+        {
+          "id": 2,
+          "username": "testuser2",
+          "password": "abc123",
+          "fullName": "Ueli Ayers",
+          "email": "testuser2@travelapp.com",
+          "mobileNumber": "54603040278",
+          "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+        },
+        {
+          "id": 1,
+          "username": "testuser1",
+          "password": "abc123",
+          "fullName": "Veronika Macias",
+          "email": "testuser1@travelapp.com",
+          "mobileNumber": "10203040500",
+          "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+        },
+        {
+          "id": 4,
+          "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4",
+          "fullName": "Arvie Limbo",
+          "email": "arvie@gmail.com",
+          "username": "arvielimbo",
+          "mobileNumber": "09999999999",
+          "password": "abcd1234"
+        }
+      ],
+      "itinerary": [
+        {
+          "activityDate": "2022-02-15T00:00:00.000Z",
+          "activities": [
+            {
+              "activityTitle": "Act 1",
+              "activityDescription": "Act 1",
+              "activityTime": "22:00"
+            },
+            {
+              "activityTitle": "Act 2",
+              "activityDescription": "Act 2",
+              "activityTime": "23:00"
+            }
+          ]
+        },
+        {
+          "activityDate": "2022-02-16T00:00:00.000Z",
+          "activities": [
+            {
+              "activityTitle": "Act 3",
+              "activityDescription": "Act 3",
+              "activityTime": "12:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "imageUrl": "https://picsum.photos/650/450",
+      "name": "Sample Again",
+      "place": "Sample Again",
+      "description": "Sample Again",
+      "departureDate": "2022-02-15T00:00:00.000Z",
+      "departureTime": "00:00",
+      "returnDate": "2022-02-19T00:00:00.000Z",
+      "returnTime": "12:00",
+      "status": "Waiting",
+      "organizer": {
+        "id": 2,
+        "username": "testuser2",
+        "password": "abc123",
+        "fullName": "Ueli Ayers",
+        "email": "testuser2@travelapp.com",
+        "mobileNumber": "54603040278",
+        "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+      },
+      "requiredTravelersCount": 3,
+      "joinedTravelers": [
+        {
+          "id": 2,
+          "username": "testuser2",
+          "password": "abc123",
+          "fullName": "Ueli Ayers",
+          "email": "testuser2@travelapp.com",
+          "mobileNumber": "54603040278",
+          "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+        },
+        {
+          "id": 3,
+          "username": "testuser3",
+          "password": "abc123",
+          "fullName": "Kristen Abdulrashid",
+          "email": "testuser3@travelapp.com",
+          "mobileNumber": "98603330512",
+          "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+        },
+        {
+          "id": 1,
+          "username": "testuser1",
+          "password": "abc123",
+          "fullName": "Veronika Macias",
+          "email": "testuser1@travelapp.com",
+          "mobileNumber": "10203040500",
+          "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+        }
+      ],
+      "itinerary": [
+        {
+          "activityDate": "2022-02-15T00:00:00.000Z",
+          "activities": [
+            {
+              "activityTitle": "Act 1",
+              "activityDescription": "Act 1",
+              "activityTime": "22:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "imageUrl": "https://picsum.photos/650/450",
+      "name": "Sample Again and Again",
+      "place": "Sample",
+      "description": "Sample",
+      "departureDate": "2022-02-15T00:00:00.000Z",
+      "departureTime": "12:00",
+      "returnDate": "2022-02-19T00:00:00.000Z",
+      "returnTime": "12:00",
+      "status": "Waiting",
+      "organizer": {
+        "id": 2,
+        "username": "testuser2",
+        "password": "abc123",
+        "fullName": "Ueli Ayers",
+        "email": "testuser2@travelapp.com",
+        "mobileNumber": "54603040278",
+        "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+      },
+      "requiredTravelersCount": 3,
+      "joinedTravelers": [
+        {
+          "id": 2,
+          "username": "testuser2",
+          "password": "abc123",
+          "fullName": "Ueli Ayers",
+          "email": "testuser2@travelapp.com",
+          "mobileNumber": "54603040278",
+          "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+        },
+        {
+          "id": 3,
+          "username": "testuser3",
+          "password": "abc123",
+          "fullName": "Kristen Abdulrashid",
+          "email": "testuser3@travelapp.com",
+          "mobileNumber": "98603330512",
+          "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+        },
+        {
+          "id": 1,
+          "username": "testuser1",
+          "password": "abc123",
+          "fullName": "Veronika Macias",
+          "email": "testuser1@travelapp.com",
+          "mobileNumber": "10203040500",
+          "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+        }
+      ],
+      "itinerary": [
+        {
+          "activityDate": "2022-02-16T00:00:00.000Z",
+          "activities": [
+            {
+              "activityTitle": "Act 1",
+              "activityDescription": "Act 1",
+              "activityTime": "12:00"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "testuser1",
+      "password": "abc123",
+      "fullName": "Veronika Macias",
+      "email": "testuser1@travelapp.com",
+      "mobileNumber": "10203040500",
+      "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+    },
+    {
+      "id": 2,
+      "username": "testuser2",
+      "password": "abc123",
+      "fullName": "Ueli Ayers",
+      "email": "testuser2@travelapp.com",
+      "mobileNumber": "54603040278",
+      "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+    },
+    {
+      "id": 3,
+      "username": "testuser3",
+      "password": "abc123",
+      "fullName": "Kristen Abdulrashid",
+      "email": "testuser3@travelapp.com",
+      "mobileNumber": "98603330512",
+      "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4"
+    },
+    {
+      "id": 4,
+      "imgUrl": "https://avataaars.io/?accessoriesType=Round&avatarStyle=Circle&clotheColor=PastelBlue&clotheType=Hoodie&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&mouthType=Smile&skinColor=Light&topType=WinterHat4",
+      "fullName": "Arvie Limbo",
+      "email": "arvie@gmail.com",
+      "username": "arvielimbo",
+      "mobileNumber": "09999999999",
+      "password": "abcd1234"
+    }
+  ]
+}

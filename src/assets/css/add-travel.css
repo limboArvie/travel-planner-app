@@ -1,0 +1,41 @@
+#main-right-div {
+    background: #ecf4f0;
+    width: 100%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+#main-left-div {
+    width: 25%;
+    height: 100vh;
+}
+#list-card #image-div {
+    background: url("../img/img1.png") #41476b;
+    background-blend-mode: multiply;
+    background-size: cover;
+    height: 300px;
+    border-radius: 10px;
+}
+
+form.submitted input.ng-invalid, form.submitted select.ng-invalid, form.submitted textarea.ng-invalid {
+    border: 1px solid #dc3545 !important;
+}
+form.submitted input.ng-invalid:focus, form.submitted select.ng-invalid:focus, form.submitted textarea.ng-invalid:focus {
+    border-color: #dc3545 !important;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, .25) !important;
+}
+form input.ng-invalid.ng-touched, form select.ng-invalid.ng-touched, form textarea.ng-invalid.ng-touched {
+    border: 1px solid #dc3545 !important;
+}
+form input.ng-invalid.ng-touched:focus, form select.ng-invalid.ng-touched:focus, form textarea.ng-invalid.ng-touched:focus {
+    border-color: #dc3545 !important;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, .25) !important;
+}
+form .form-array, form .nested-form-group {
+    border: 1px solid lightgrey !important;
+    border-radius: 10px !important;
+    padding: 10px 15px !important;
+    margin-top: 15px !important;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+}

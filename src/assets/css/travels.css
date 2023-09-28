@@ -1,0 +1,10 @@
+#main-right-div{
+    background: #ECF4F0;
+    width: 100%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+#main-left-div{
+    width: 25%;
+    height: 100vh;
+}

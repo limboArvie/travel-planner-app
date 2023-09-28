@@ -1,0 +1,446 @@
+@font-face {
+    font-family: "Avenir";
+    src: url("../font/Avenir-Book.woff2") format("otf"), url("../font/Avenir-Book.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Avenir Bold";
+    src: url("../font/Avenir-Black.woff2") format("otf"), url("../font/Avenir-Black.woff") format("woff");
+}
+
+* {
+    font-family: "Avenir";
+}
+
+b {
+    font-family: "Avenir Bold";
+}
+
+::placeholder {
+    color: rgba(81, 78, 78, 50%) !important;
+    opacity: 50%;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: transparent;
+    color: black;
+}
+
+.list-style-none {
+    list-style: none;
+}
+
+.dropdown-toggle::after {
+    border: 0px !important;
+}
+
+.h-30px {
+    height: 30px;
+}
+
+.w-30px {
+    width: 30px;
+}
+
+.h-60px {
+    height: 60px;
+}
+
+.w-60px {
+    width: 60px;
+}
+
+.h-50px {
+    height: 50px;
+}
+
+.h-unset {
+    height: unset !important;
+}
+
+.w-50px {
+    width: 50px;
+}
+
+.w-150px {
+    width: 150px;
+}
+
+.w-100px {
+    width: 100px;
+}
+
+.w-65 {
+    width: 70%;
+}
+
+.w-35 {
+    width: 35%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.border-dark-50 {
+    border-color: #acb7c1 !important;
+}
+
+.vertical-line {
+    border-left: 1px solid #c7c4c4;
+    height: 50px;
+    margin: 0px 10px 0px 10px;
+}
+
+.text-transparent {
+    color: transparent !important;
+}
+
+.text-green {
+    color: #698e74 !important;
+    font-weight: bolder;
+}
+
+.text-light-green {
+    color: #889e81 !important;
+    font-weight: bolder;
+}
+
+.text-lighter-green {
+    color: #95a99d !important;
+    font-weight: bolder;
+}
+
+.bg-transparent {
+    background: transparent !important;
+}
+
+.bg-white {
+    background: white;
+}
+
+.bg-greener {
+    background: #c7d6c9 !important;
+}
+
+.bg-green {
+    background: #698474 !important;
+}
+
+.bg-light-green {
+    background: #dfeae5 !important;
+}
+
+.bg-lighter-green {
+    background: #b9cbba !important;
+}
+
+.border-mid {
+    border: solid 1px #889e81;
+}
+
+.border-radius-3 {
+    border-radius: 3px;
+}
+
+.border-radius-10 {
+    border-radius: 10px;
+}
+
+.border-top-radius-10 {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.border-bottom-radius-10 {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.border-top-unset {
+    border-top-right-radius: unset !important;
+    border-top-left-radius: unset !important;
+}
+
+.border-bottom-unset {
+    border-bottom-right-radius: unset !important;
+    border-bottom-left-radius: unset !important;
+}
+
+.nav a {
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.nav-active {
+    border-right: 5px #698e74 solid;
+}
+
+.in-active {
+    opacity: 80%;
+}
+
+.nav a:hover {
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: #4a79a2 !important;
+    border: solid 1px #4a79a2;
+    color: white;
+    font-weight: bolder;
+}
+
+.btn-warning {
+    background: #c9b254 !important;
+    border: solid 1px #c9b254;
+    color: white;
+    font-weight: bolder;
+}
+
+.btn-danger {
+    background: #a24a4a !important;
+    border: solid 1px #a24a4a;
+    color: white;
+    font-weight: bolder;
+}
+
+.btn-waiting {
+    background: #de914e !important;
+    border: solid 1px #de914e;
+    color: white;
+    font-weight: bolder;
+}
+
+.w-inherit {
+    width: inherit;
+}
+
+.h-inherit {
+    height: inherit;
+}
+
+.h-100 {
+    height: 100vh !important;
+}
+
+.app-title {
+    font-size: 2.5rem;
+}
+
+.heading-title {
+    font-size: 1.5rem;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+.font-16 {
+    font-size: 16px;
+}
+
+.font-18 {
+    font-size: 18px;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+.font-22 {
+    font-size: 22px;
+}
+
+.font-30 {
+    font-size: 30px;
+}
+
+.font-32 {
+    font-size: 32px;
+}
+
+.font-60 {
+    font-size: 60px;
+}
+
+.btn-green {
+    background: #889e81;
+    color: white;
+    border-radius: 25px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    width: 180px;
+    padding: 15px;
+}
+
+.btn-green:hover {
+    color: white;
+    font-size: 17px;
+}
+
+.text-label {
+    color: #acacac !important;
+    font-size: 10px;
+}
+
+body {
+    background: white;
+    overflow-x: hidden;
+}
+
+.form-control {
+    padding: 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    box-shadow: none !important;
+}
+
+/* Bootstrap 4 text input with search icon */
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2rem;
+    height: 1.5rem;
+    line-height: 1rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+    top: 10px;
+    right: 20px;
+}
+
+.dropdown-divider {
+    border: solid 1px#babbbb !important;
+}
+
+/*SCROLL*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #698474;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Travel Cards */
+.save-travel {
+    float: right;
+    position: relative;
+    top: -90px;
+    right: -10px;
+}
+
+/* Travel View  */
+.save-travel-view {   
+    top: -100%;    
+}
+
+
+/* Extend bootstrap 4 */
+.z-index-1 {
+    z-index: 1;
+}
+
+.overlay-dark {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.h-40 {
+    height: 40%;
+}
+
+.card-cta {
+    height: 40%;
+}
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .has-search .form-control-feedback {
+        top: 14px;
+        right: 45px;
+    }
+
+    #travels-accord {
+        left: -40px;
+    }
+
+    .card-cta {
+        height: 10%;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .mt-xs-3 {
+        margin-top: 2.2rem;
+    }
+
+    .app-title {
+        font-size: 1rem;
+    }
+
+    .card-cta {
+        height: 15%;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .app-title {
+        font-size: 1.5rem;
+    }
+
+    .card-cta {
+        height: 35%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .app-title {
+        font-size: 2rem;
+    }
+
+    .card-cta {
+        height: 40%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .app-title {
+        font-size: 2rem;
+    }
+
+    .card-cta {
+        height: 15%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}

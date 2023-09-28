@@ -1,0 +1,136 @@
+<div class="d-flex mt-3 mb-3">
+    <h4 class="text-green"><b>Add Travel Goal</b> > <span class="text-lighter-green">Create
+            itinerary</span></h4>
+</div>
+<div>
+    <form 
+        [formGroup]="travelForm"
+        (ngSubmit)="onSubmit()"
+    >
+        <div class="row mt-3">
+            <div class="col-5">
+                <div
+                    class="d-flex flex-column h-inherit justify-content-center align-self-center align-items-center bg-white border-radius">
+                    <img class="p-2 img-fluid" src="https://picsum.photos/650/450">
+                </div>
+            </div>
+            <div class="col pb-5">
+                <div class="form-group mb-4">
+                    <input 
+                        type="text" 
+                        class="border-0 form-control"
+                        placeholder="Travel Goal Name"
+                        formControlName="name" />
+                        <app-form-error-display [formControlElement]="travelForm?.get('name')" [fieldName]="'Travel Goal Name'"></app-form-error-display>
+                </div>
+                <div class="form-group mb-4">
+                    <input 
+                        type="text" 
+                        class="border-0 form-control" 
+                        placeholder="Place" 
+                        formControlName="place" />
+                    <app-form-error-display [formControlElement]="travelForm?.get('place')" [fieldName]="'Place'"></app-form-error-display>
+
+                </div>
+                <div class="form-group mb-4">
+                    <input 
+                        type="text" 
+                        class="border-0 form-control" 
+                        placeholder="Thumbnail Url" 
+                        value="https://picsum.photos/650/450"
+                        formControlName="imageUrl" />
+                    <app-form-error-display [formControlElement]="travelForm?.get('imageUrl')" [fieldName]="'Image Url'"></app-form-error-display>
+
+                </div>
+                <div class="form-group mb-4">
+                    <textarea 
+                        placeholder="Short Description"
+                        class="border-0 form-control"
+                        formControlName="description"
+                    ></textarea>
+                    <app-form-error-display [formControlElement]="travelForm?.get('description')" [fieldName]="'Short Description'"></app-form-error-display>
+
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group mb-4">
+                            Date of Departure
+                            <input 
+                                type="date" 
+                                class="border-0 form-control"
+                                placeholder="Date of Departure"
+                                formControlName="departureDate">
+                            <app-form-error-display [formControlElement]="travelForm?.get('departureDate')" [fieldName]="'Date of Departure'"></app-form-error-display>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group mb-4">
+                            Time of Departure
+                            <input 
+                                type="time" 
+                                class="border-0 form-control"
+                                placeholder="Time of Departure"
+                                formControlName="departureTime">
+                            <app-form-error-display [formControlElement]="travelForm?.get('departureTime')" [fieldName]="'Time of Departure'"></app-form-error-display>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group mb-4">
+                            Date of Return
+                            <input 
+                                type="date" 
+                                class="border-0 form-control"
+                                placeholder="Date of Return"
+                                formControlName="returnDate">
+                            <app-form-error-display [formControlElement]="travelForm?.get('returnDate')" [fieldName]="'Date of Return'"></app-form-error-display>
+                        </div>
+                    </div>
+                    <div class="col">
+                        Time of Return
+                        <input 
+                            type="time" 
+                            class="border-0 form-control"
+                            placeholder="Time of Return"
+                            formControlName="returnTime">
+                        <app-form-error-display [formControlElement]="travelForm?.get('returnTime')" [fieldName]="'Time of Return'"></app-form-error-display>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group mb-4">
+                            <input 
+                                type="number" 
+                                class="border-0 form-control"
+                                placeholder="Required Travelers"
+                                formControlName="requiredTravelersCount" />
+                            <app-form-error-display [formControlElement]="travelForm?.get('requiredTravelersCount')" [fieldName]="'Required Travelers'"></app-form-error-display>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <app-travel-itinerary-form [itineraries]="contentsFromArray?.controls" [(formGroup)]="travelForm"></app-travel-itinerary-form>
+            
+        <div class="d-flex justify-content-center mt-5">
+            <button 
+                type="button" 
+                class="btn btn-green mr-2"
+                [disabled]="travelForm?.get('itineraries')?.invalid"
+                (click)="onAddItinerary()">Add
+                Itinerary</button>
+            <button *ngIf="!this.isForEditing"
+                type="submit" 
+                class="btn btn-green mr-2"
+                [disabled]="travelForm?.invalid">Create</button>
+            <button *ngIf="this.isForEditing"
+                type="submit" 
+                class="btn btn-green mr-2"
+                [disabled]="travelForm?.invalid">Save Changes</button>
+        </div>
+    </form>
+
+</div>
+
+<hr />
+<br />

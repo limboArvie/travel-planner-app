@@ -1,0 +1,19 @@
+#main-right-div {
+    background: #ecf4f0;
+    width: 100%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+#main-left-div {
+    width: 25%;
+    height: 100vh;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .d-flex {
+        flex-direction: column;
+        padding: 0px !important;
+    }
+    p{
+        text-align: justify;
+    }
+}

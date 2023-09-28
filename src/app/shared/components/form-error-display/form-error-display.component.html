@@ -1,0 +1,30 @@
+<ng-container *ngIf="formControlElement
+            && formControlElement.invalid 
+            && formControlElement.touched">
+    <div class="invalid-feedback d-block">
+
+        <span *ngIf="formControlElement.errors.required"> {{ fieldName }} is required</span>
+
+        <span *ngIf="formControlElement.errors.dateError">{{ fieldName }} is not a valid date</span>
+
+        <span *ngIf="formControlElement.errors.pastDateError">{{ fieldName }} should not be lesser than the current date</span>
+
+        <span *ngIf="formControlElement.errors.min"> {{ fieldName }} did not meet the minimum value allowed ({{formControlElement.errors.min.min}}) </span>
+
+        <span *ngIf="formControlElement.errors.max"> {{ fieldName }} exceeded maximum value allowed ({{formControlElement.errors.max.max}}) </span>
+
+        <span *ngIf="formControlElement.errors.minlength"> {{ fieldName }} did not meet the minimum characters allowed ({{formControlElement.errors.minlength.requiredLength}}) </span>
+
+        <span *ngIf="formControlElement.errors.maxlength"> {{ fieldName }} exceeded maximum characters allowed ({{formControlElement.errors.maxlength.requiredLength}}) </span>
+
+        <span *ngIf="formControlElement.errors.uniqueError"> {{ fieldName }} already exists. </span>
+
+        <span *ngIf="formControlElement.errors.validUsernameError"> {{ fieldName }} cannot contain special characters. Only alphanumeric characters and underscore are allowed. </span>
+
+        <span *ngIf="formControlElement.errors.validMobileError"> {{ fieldName }} is not in a valid format. </span>
+
+        <span *ngIf="formControlElement.errors.passwordMismatchError"> {{ fieldName }} should match the password. </span>
+
+        <span *ngIf="formControlElement.errors.email"> {{ fieldName }} should be a valid email address. </span>
+    </div>
+</ng-container>

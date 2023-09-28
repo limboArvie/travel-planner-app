@@ -1,0 +1,26 @@
+#main-right-div {
+    background: #ecf4f0;
+    width: 100%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+#main-left-div {
+    width: 25%;
+    height: 100vh;
+}
+.list-card #image-div {
+    background: url("../img/img1.png") #41476b;
+    background-blend-mode: multiply;
+    background-size: cover;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.cardLink:hover .cardHover {
+    display: unset !important;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}

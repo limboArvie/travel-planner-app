@@ -1,0 +1,31 @@
+#main-right-div {
+    background: #ecf4f0;
+    width: 100%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+#main-left-div {
+    width: 25%;
+    height: 100vh;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .card-header h3{
+        font-size: 18px !important;
+    }
+    #accordRow {
+        flex-direction: column;
+    }
+    #accordRow h3{
+        font-size: 18px !important;
+    }
+    #accordRow .col-2{
+        width: 100%;
+        max-width: 100%;
+        text-align: center !important;
+        font-size: 14px;
+    }
+    #headerDetails{
+        padding: 1rem;
+    }
+}

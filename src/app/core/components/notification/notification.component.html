@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg d-inline-block p-0">
+    <div class="div collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown list-style-none">
+                <a class="nav-link dropdown-toggle p-0" href="#" id="navbarDropdown"
+                    role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <img class="w-30px h-30px mr-3 ml-3" src="../assets/icons/bell.png">
+                </a>
+                <div class="dropdown-menu pl-3 pr-3" id="travels-accord" aria-labelledby="navbarDropdown">
+                    <ng-container *ngIf="newTravelGoals$.value.length > 0">
+                        <ng-container *ngFor="let travel of newTravelGoals$ | async">
+                            <span class="dropdown-item mb-2" *ngIf="travel?.action === 'POST'">{{ travel?.travel.name }} travel goal has been created.</span>
+                            <span class="dropdown-item mb-2" *ngIf="travel?.action === 'PUT'">{{ travel?.travel.name }} travel goal has been updated.</span>
+                            <hr>
+                        </ng-container>
+                    </ng-container>
+                    <ng-container *ngIf="newTravelGoals$.value.length === 0">
+                        <span class="dropdown-item mb-2">No new notifications to show.</span>
+                    </ng-container>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>

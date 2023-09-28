@@ -1,0 +1,169 @@
+<ng-container *ngIf="travel; else noTravelToShow">
+    <div class="col-lg-12 col-xl-12">
+        <div class="card mb-3 shadow border-radius-10">
+            <div class="row no-gutters">
+                <div class="col-lg-3 col-xl-3">
+                    <img class="card-img border-top-radius-10" [src]="travel?.imageUrl"
+                        style="height: 100%;" alt="Card image" />
+                </div>
+                <div class="col-lg-9 col-xl-9">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-8">
+                                <h3
+                                    class="card-title text-black mb-1 mb-0 font-weight-bolder font-30">
+                                    {{ travel?.name }}
+                                </h3>
+                                <p class="card-text">{{ travel?.place }}</p>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 float-right text-center mt-xs-3 mt-sm-3 mt-md-3">
+                                <img src="assets/icons/heart.png" class="mr-3"
+                                    style="width: 35px; height: 35px;">
+                                <button *appIsAuthorized="{id: travel?.organizer.id, isForOrganizerView: false}"
+                                    class="btn" 
+                                    [appSetStatus]="travel?.status"
+                                    >{{ travel?.status | uppercase }}</button>
+                                        
+                                <button *appIsAuthorized="{id: travel?.organizer.id, isForOrganizerView: true}"
+                                        class="btn dropdown-toggle" 
+                                        [appSetStatus]="travel?.status" 
+                                        type="button" id="dropdownMenuButton" 
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            {{ travel?.status | uppercase }} <b><i id="statusIcon" class="fas fa-sort-down font-20 rotate-icon text-left"></i></b>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" (click)="updateStatus('Draft')">DRAFT</a>
+                                    <a class="dropdown-item" (click)="updateStatus('Ongoing')">ONGOING</a>
+                                    <a class="dropdown-item" (click)="updateStatus('Pending')">PENDING</a>
+                                    <a class="dropdown-item" (click)="updateStatus('Completed')">COMPLETED</a>
+                                    <a class="dropdown-item" (click)="updateStatus('Cancelled')">CANCELLED</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-footer bg-white border-top-0">
+                        <hr>
+
+                        <div class="row" id="headerDetails">
+                            <div class="col">
+                                <div class="bd-highlights mr-3">
+                                    <p class="text-label mr-2 mb-1"><b>DATE OF DEPARTURE</b></p>
+                                    <h6 class="text-bla mb-1ck font-16 mb-0 font-weight-bolder">
+                                        {{ travel?.departureDate | date:'longDate' }}
+                                    </h6>
+                                    <p class="text-black font-14">{{ travel?.departureTime | timeConverter }}</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="bd-highlights mr-2">
+                                    <p class="text-label mr-2 mb-1"><b>DATE OF RETURN</b></p>
+                                    <h6 class="text-bla mb-1ck font-16 mb-0 font-weight-bolder">
+                                        {{ travel?.returnDate | date:'longDate' }}
+                                    </h6>
+                                    <p class="text-black font-14">{{ travel?.returnTime | timeConverter }}</p>
+                                </div>
+                            </div>
+                            <div class="col">
+
+                                <div class="bd-highlights mr-3">
+                                    <p class="text-label mr-2 mb-1"><b>NO. OF TRAVELERS</b></p>
+                                    <h6 class="text-bla mb-1ck font-16 mb-0 font-weight-bolder">
+                                        {{ travel?.joinedTravelers?.length }}/{{ travel?.requiredTravelersCount }}
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="bd-highlights mr-2">
+                                    <p class="text-label mr-2 mb-1 font-14"><b>ORGANIZER</b></p>
+                                    <h6 class="text-bla mb-1ck font-16 mb-0 font-weight-bolder">
+                                        {{ travel?.organizer.fullName }}
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pb-3">
+                            <div class="col-3">
+                                <div class="bd-highlights mr-2">
+                                    <p class="text-label mr-2 mb-1 font-14"><b>DRONE FLYING</b></p>
+                                    <h6 class="text-bla mb-1ck font-16 mb-0 font-weight-bolder">
+                                        Allowed
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="bd-highlights mr-2">
+                                    <p class="text-label mr-2 mb-1 font-14"><b>VISA</b></p>
+                                    <h6 class="text-bla mb-1ck font-16 mb-0 font-weight-bolder">
+                                        Required
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <div class="p-1 align-self-center">
+                                    <ng-container *ngIf="showItinerary; then showHideButton; else showViewButton">
+                                    </ng-container>
+                                    <ng-template #showHideButton>
+                                        <button  type="submit"
+                                        class="btn btn-green m-1 font-weight-bolder"
+                                        (click)="displayItinerary()">Hide
+                                        itinerary</button>
+                                    </ng-template>
+                                    <ng-template #showViewButton>
+                                        <button  type="submit"
+                                        class="btn btn-green m-1 font-weight-bolder"
+                                        (click)="displayItinerary()">View
+                                        itinerary</button>
+                                    </ng-template>
+
+                                    <ng-container *appIsAuthorized="{id: travel?.organizer.id, isForOrganizerView: false}">
+                                        <button *ngIf="travel?.status.toUpperCase() === 'PENDING'"
+                                            type="submit"
+                                            class="btn btn-green m-1 font-weight-bolder"
+                                            [disabled]="disableJoinButton"
+                                            (click)="joinTravelGoal()">Join Now
+                                        </button>
+                                    </ng-container>
+                                    
+                                    <ng-container *appIsAuthorized="{id: travel?.organizer.id, isForOrganizerView: true}">
+                                        <button 
+                                            class="btn btn-green m-1 font-weight-bolder"
+                                            (click)="editTravelGoal(travel?.id)">Edit
+                                        </button>
+                                        <button *ngIf="showDeleteButton"
+                                            class="btn btn-green btn-danger m-1 font-weight-bolder"
+                                            (click)="deleteTravelGoal(travel?.id)">Delete
+                                        </button>
+                                    </ng-container>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<hr>
+
+<ng-container *ngIf="showItinerary">
+    <app-travel-itinerary [itineraries]="travel.itinerary"></app-travel-itinerary>
+</ng-container>
+
+
+<div class="d-flex mt-3">
+    <h4 class="text-green font-22">Travelers who joined</h4>
+</div>
+<div class="d-flex">
+    <ng-container *ngFor="let traveler of travel?.joinedTravelers">
+        <img class="border-radius w-60px h-60px m-2" [src]="traveler?.imgUrl" data-toggle="tooltip" data-placement="bottom" [title]="traveler?.fullName">
+    </ng-container>
+</div>
+</ng-container>
+<ng-template #noTravelToShow>
+    <div class="container">
+        <h3>Travel Goal not found</h3>
+    </div>
+</ng-template>

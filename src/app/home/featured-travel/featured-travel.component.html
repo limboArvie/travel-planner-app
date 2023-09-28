@@ -1,0 +1,49 @@
+<div class="d-flex mt-5">
+    <h4 class="text-green font-30"><b>Featured Travels</b></h4>
+</div>
+<div class="row list-card mt-3">
+    <div class="col" *ngFor="let travel of featuredTravels">
+        <div class="card border-radius-10">
+            <div id="image-div" class="border-bottom-unset">
+                <div class="d-flex align-self-end justify-content-start m-2">
+                    <div class="bd-highlights">
+                        <h6 class="text-white mb-0 font-weight-bolder font-18">{{ travel?.name }}</h6>
+                        <p class="text-white">{{ travel?.place }}</p>
+                    </div>
+                    <div class="bd-highlights ml-auto">
+                        <i style="font-size:25px;" style="font-size:25px;" class="fas fa-heart text-white"></i>
+                    </div>
+                </div>
+                <div class="d-flex h-50 align-items-end ml-2 pb-2">
+                    <button class="btn" [appSetStatus]="travel?.status">{{ travel?.status | uppercase }}</button>
+                </div>
+            </div>
+            <div class="card-body p-1">
+                <div class="d-flex align-self-end justify-content-start m-2">
+                    <div class="bd-highlights mr-3">
+                        <p class="text-label mr-2 mb-1">DATE OF DEPARTURE</p>
+                        <h6 class="text-bla mb-1ck font-14 mb-0 font-weight-bolder">{{ travel?.departureDate | date:'longDate' }}
+                        </h6>
+                        <p class="text-black font-14">{{ travel?.departureTime | timeConverter }}</p>
+                    </div>
+                    <div class="bd-highlights mr-2">
+                        <p class="text-label mr-2 mb-1">DATE OF RETURN</p>
+                        <h6 class="text-bla mb-1ck font-14 mb-0 font-weight-bolder">{{ travel?.returnDate | date:'longDate' }}
+                        </h6>
+                        <p class="text-black font-14">{{ travel?.returnTime | timeConverter }}</p>
+                    </div>
+                </div>
+                <div class="d-flex align-self-end justify-content-start m-2">
+                    <div class="bd-highlights mr-3">
+                        <p class="text-label mb-1">ORGANIZER</p>
+                        <h6 class="text-black font-14 mb-0 font-weight-bolder">{{ travel?.organizer.fullName }}</h6>
+                    </div>
+                    <div class="bd-highlights">
+                        <p class="text-label mb-1">NO. OF TRAVELERS</p>
+                        <h6 class="text-black font-14 mb-0 font-weight-bolder">{{ travel?.joinedTravelers?.length }}/{{ travel?.requiredTravelersCount }}</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

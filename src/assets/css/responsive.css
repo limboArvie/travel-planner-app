@@ -1,0 +1,85 @@
+#mobile-nav {
+    display: none;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    top: 50px;
+    right: 40px;
+    position: absolute;
+    left: unset;
+    border: unset;
+    border-top-left-radius: 15px !important;
+    border-bottom-right-radius: 15px !important;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    
+    #right-div {
+        display: none;
+    }
+    #main-component {
+        margin: 2rem;
+    }
+    #main-left-div {
+        display: none !important;
+    }
+    #main-right-div {
+        border-bottom-left-radius: unset;
+        border-top-right-radius: 50px;
+        margin-top: 4rem;
+    }
+    #mobile-nav {
+        display: unset !important;
+        position: absolute;
+        width: 100%;
+        text-align: right;
+        background: white;
+        z-index: 999999;
+    }
+    .logo-div {
+        margin: unset !important;
+        width: 30%;
+    }
+    #rate-div {
+        flex-direction: column;
+        text-align: center !important;
+    }
+    #rate-div div {
+        padding: unset !important;
+        align-self: center;
+        max-width: 100% !important;
+    }
+    #rate-div img {
+        width: 100px !important;
+        height: 100px !important;
+    }
+    #testimonials {
+        padding: unset !important;
+        margin-top: 2rem;
+    }
+    #search-div {
+        justify-content: center;
+    }
+    #search-div .div {
+        width: 100% !important;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    #footer div {
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #list-card #image-div{
+        background-size: 100% 100% !important;
+    }
+    #list-card .col-5{
+        max-width: 100% !important;
+        flex: unset !important;
+    }
+}

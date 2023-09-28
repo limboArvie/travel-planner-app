@@ -1,0 +1,37 @@
+#main-right-div{
+    background: #ECF4F0;
+    width: 100%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+#main-left-div{
+    width: 25%;
+    height: 100vh;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    #profileCards {
+        flex-direction: column;
+    }
+    #profileCards .w-70,
+    .w-30 {
+        width: 100% !important;
+    }
+    #profileCards #headerCard {
+        flex-direction: column;
+        text-align: center;
+    }
+    #profileCards #headerCardContenthead {
+        padding: 0px !important;
+    }
+    #profileCards #headerCardContent {
+        flex-direction: column !important;
+        text-align: center;
+    }
+    #profileCards #headerCardContent div {
+        padding: 1px;
+        font-size: 12px;
+    }
+    #profileCards #headerCardContent .ml-auto {
+        margin-left: unset !important;
+    }
+}

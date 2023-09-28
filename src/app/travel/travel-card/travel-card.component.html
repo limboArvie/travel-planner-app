@@ -1,0 +1,54 @@
+<div class="card border-radius-10 cardLink m-2 shadow" (click)="viewTravelDetails()">
+  <img
+    class="card-img-top border-top-radius-10"
+    [src]="travel?.imageUrl"
+    alt="Card image"
+  />
+  <div class="card-img-overlay overlay-dark border-radius-10">
+    <h4 class="card-title">
+      <a [routerLink]="'/travels/'+travel?.id" class="text-white">{{ travel?.name }}</a>
+    </h4>
+    <p class="card-text text-white">{{ travel?.place }}</p>
+    <a [routerLink]="'/travels/'+travel?.id" class="btn" 
+    [appSetStatus]="travel?.status"
+    >{{ travel?.status | uppercase }}</a>
+    <div
+      class="bd-highlights ml-auto"
+      style="float: right; position: relative; top: -80px"
+    >
+      <i style="font-size: 25px" class="fas fa-heart text-white"></i>
+    </div>
+  </div>
+  <div
+    class="card-body z-index-1 bg-white pl-0 pr-0 pt-2 pb-2 border-bottom-radius-10"
+  >
+    <div class="row m-1">
+      <div class="col">
+        <p class="text-label mr-2 mb-1">DATE OF DEPARTURE</p>
+        <h6 class="text-bla mb-1ck font-14 mb-0 font-weight-bolder">
+        {{ travel?.departureDate | date:'longDate' }}
+        </h6>
+        <p class="text-black font-14">{{ travel?.departureTime | timeConverter }}</p>
+      </div>
+      <div class="col">
+        <p class="text-label mr-2 mb-1">DATE OF RETURN</p>
+        <h6 class="text-bla mb-1ck font-14 mb-0 font-weight-bolder">
+          {{ travel?.returnDate | date:'longDate' }}
+        </h6>
+        <p class="text-black font-14">{{ travel?.returnTime | timeConverter }}</p>
+      </div>
+    </div>
+    <div class="row m-1">
+      <div class="col">
+        <p class="text-label mb-1">ORGANIZER</p>
+        <h6 class="text-black font-14 mb-0 font-weight-bolder">
+          {{ travel?.organizer.fullName }}
+        </h6>
+      </div>
+      <div class="col">
+        <p class="text-label mb-1">NO. OF TRAVELERS</p>
+        <h6 class="text-black font-14 mb-0 font-weight-bolder">{{ travel?.joinedTravelers?.length }}/{{ travel?.requiredTravelersCount }}</h6>
+      </div>
+    </div>
+  </div>
+</div>

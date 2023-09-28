@@ -1,0 +1,20 @@
+#main-div {
+    height: 100vh;
+    overflow: none;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    #right-div {
+        display: none;
+    }
+    #header-login .d-flex{
+        flex-direction: column;
+        text-align: center;
+    }
+    #header-login img{
+        width: 30% !important;
+        margin-bottom: 1rem !important;
+    }
+    #header-login h4{
+        font-size: 45px !important;
+    }
+}

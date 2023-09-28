@@ -1,0 +1,77 @@
+<div class="row mb-5" id="search-div">
+    <div class="col m-1">
+        <div class="form-group has-search mb-0">
+            <input type="text" class="form-control" placeholder="Search" (keyup)="searchTravelGoal($event.target.value)">
+            <span class="fas fa-search form-control-feedback"></span>
+        </div>
+    </div>
+    <div class="div p-1 align-self-center ">
+        <nav class="navbar navbar-expand-lg d-inline-block p-0">
+            <div class="div collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown list-style-none">
+                        <a class="nav-link dropdown-toggle p-0" href="#" id="navbarDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <img class="w-30px h-30px mr-3 ml-3" src="../assets/icons/travel-active.png">
+                        </a>
+                        <div class="dropdown-menu pl-3 pr-3" id="travels-accord"
+                            aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item mb-2" routerLink="/travels">My Travel Goals</a>
+                            <hr>
+                            <a class="dropdown-item mb-2" routerLink="/travels/create">Add Travel
+                                Goals</a>
+                            <hr>
+                            <a class="dropdown-item mb-2" routerLink="/history">History</a>
+                            <hr>
+                            <a class="dropdown-item mb-2" routerLink="/saved">Saved</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg d-inline-block p-0">
+            <div class="div collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown list-style-none">
+                        <a class="nav-link dropdown-toggle p-0" href="#" id="navbarDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <img class="w-30px h-30px mr-3 ml-3" src="../assets/icons/buddies-active.png">
+                        </a>
+                        <div class="dropdown-menu p-3" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item mb-2" routerLink="/buddies">My Buddies</a>
+                            <hr>
+                            <div class="d-flex justify-content-between">
+                                <a class="dropdown-item mt-1" routerLink="/requests">Requests </a>
+                                <span
+                                    class="bg-green border-radius-10 p-1 font-weight-bolder text-white align-self-center mt-1">3
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <app-notification></app-notification>
+        <span class="vertical-line">&nbsp;</span>
+        <nav class="navbar navbar-expand-lg d-inline-block p-0">
+            <div class="div collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown list-style-none">
+                        <a class="nav-link dropdown-toggle p-0" href="#" id="navbarDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <img class="border-radius w-50px h-50px" src="../assets/img/user.png">
+                        </a>
+                        <div class="dropdown-menu p-3" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item mb-2" routerLink="/profile">My Profile</a>
+                            <hr>
+                            <a class="dropdown-item mt-1" (click)="logout()">LOGOUT</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
